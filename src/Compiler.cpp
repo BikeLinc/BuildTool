@@ -1,7 +1,7 @@
 /**
  * File:            Compiler.cpp
  *
- * Author:          Chloe Walsh
+ * Author:          Lincoln Scheer
  * Date Created:    11/7/21
  *
  * Purpose:         Facilitate the preparation and execution of Rules
@@ -35,7 +35,7 @@ void Compiler::execute(const int argc, const char** argv) {
 
 void Compiler::executeAllRules() {
     if(rules.size() == 0) {
-        std::cout << "fake: *** No targets. Stop." << std::endl;
+        std::cout << "BuildTool: *** No targets. Stop." << std::endl;
         exit(2);
     }
     
@@ -53,7 +53,7 @@ void Compiler::executeAllRules() {
 
 		// Detect circular dependencies
 		if(completed.empty()) {
-			std::cout << "fake: Circular " << rules.back().name << " <- " << rules.back().dependencies.front() << " dependency dropped." << std::endl;
+			std::cout << "BuildTool: Circular " << rules.back().name << " <- " << rules.back().dependencies.front() << " dependency dropped." << std::endl;
 			rules.back().dependencies.erase(rules.back().dependencies.begin());
 		}
 
@@ -68,7 +68,7 @@ void Compiler::executeAllRules() {
 // Execute individual rule
 void Compiler::executeRule(std::string rule) {
     if(rules.size() == 0) {
-        std::cout << "fake: *** No targets. Stop." << std::endl;
+        std::cout << "BuildTool: *** No targets. Stop." << std::endl;
         exit(2);
     }
     bool present = false;
@@ -81,7 +81,7 @@ void Compiler::executeRule(std::string rule) {
         }
     }   
     if(!present) {
-        std::cout << "fake: Target \'" << rule << "\' does not exits. Stop." << std::endl;
+        std::cout << "BuildTool: Target \'" << rule << "\' does not exits. Stop." << std::endl;
 
     }
 }
@@ -106,7 +106,7 @@ bool Compiler::checkRuleExists(std::string ruleName, std::string caller) {
 		}
 	}
 	if(!ruleDefinitionPresent) {
-		std::cout << "fake: *** No rule to make target \'" << ruleName << "\', needed by \'" << caller << "\'. Stop." << std::endl;
+		std::cout << "BuildTool: *** No rule to make target \'" << ruleName << "\', needed by \'" << caller << "\'. Stop." << std::endl;
 		std::vector<std::string> empty;
 		std::vector<Variable> vars;
 		Rule rule(caller,0, empty, empty, vars);

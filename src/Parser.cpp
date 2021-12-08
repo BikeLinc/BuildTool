@@ -1,10 +1,10 @@
 /**
  * File:            Parser.cpp
  *
- * Author:          Chloe Walsh
+ * Author:          Lincoln Scheer
  * Date Created:    11/7/21
  *
- * Purpose:         Itentify symbols in a Fakefile and generate a
+ * Purpose:         Itentify symbols in a BuildTool and generate a
  *                  list of Rules and Variables.
  *
  * Description:     To generate a list of symbols this class first
@@ -31,7 +31,7 @@ void Parser::parse(const char* filepath) {
     std::string str;
 
     if(!file.is_open()) {
-        std::cout << "fake: *** No targets specified and no Fakefile found. Stop." << std::endl;
+        std::cout << "BuildTool: *** No targets specified and no BuildTool found. Stop." << std::endl;
         exit(2);
     }
 

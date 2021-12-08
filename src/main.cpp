@@ -1,8 +1,8 @@
-#include "Fakefile.h"
+#include "BuildTool.h"
 
 int main(const int argc, const char** argv) {
     // Generate Symbols
-    Parser parser("Fakefile");
+    Parser parser("BuildTool");
     
     // Load Symbols
     Compiler compiler(parser.getRules());

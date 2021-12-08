@@ -1,10 +1,10 @@
 /**
  * File:            Parser.h
  *
- * Author:          Chloe Walsh
+ * Author:          Lincoln Scheer
  * Date Created:    11/7/21
  *
- * Purpose:         Itentify symbols in a Fakefile and generate a
+ * Purpose:         Itentify symbols in a BuildTool and generate a
  *                  list of Rules and Variables.
  *
  * Description:     To generate a list of symbols this class first

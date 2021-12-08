@@ -1,7 +1,7 @@
 /**
  * File:            Object.h
  *
- * Author:          Chloe Walsh
+ * Author:          Lincoln Scheer
  * Date Created:    11/7/21
  *
  * Purpose:         Contains the definition for the Variable and 
@@ -119,8 +119,8 @@ struct Rule {
                     commandExitCode = system(command.c_str());
                 }
                 if(commandExitCode != 0) {
-                    std::cout << "Fakefile:" << (commandNumber + definitionLine) << ": recipe for target \'" << name << "\' failed" << std::endl;
-                    std::cout << "fake: *** [" << name << "] error " << commandExitCode << std::endl;
+                    std::cout << "BuildTool:" << (commandNumber + definitionLine) << ": recipe for target \'" << name << "\' failed" << std::endl;
+                    std::cout << "BuildTool: *** [" << name << "] error " << commandExitCode << std::endl;
                     exit(2);
                 }
                 commandNumber++;

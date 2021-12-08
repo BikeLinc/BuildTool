@@ -1,7 +1,7 @@
 /**
  * File:            Compiler.h
  *
- * Author:          Chloe Walsh
+ * Author:          Lincoln Scheer
  * Date Created:    11/7/21
  *
  * Purpose:         Facilitate the preparation and execution of Rules
