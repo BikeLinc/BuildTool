@@ -21,3 +21,27 @@ make
 ```
 make run
 ```
+
+<br>
+<h2>Features</h2>
+
+BuildTool currently only supports variable declaration, the referencing of said variables, rule declaration, and dependency prioritized execution.
+
+<br>
+<h2>Syntax</h2>
+
+Variable Definition
+```
+<NAME> = "<VALUE>"
+```
+
+Variable Referencing
+```
+$(<NAME>) is reduced to <VALUE>
+```
+
+Rule Definition
+```
+<NAME> : <DEPENDENCY1> <DEPENDENCY2> <DEPENDENCY3>
+    <COMMAND>
+    <COMMAND>
