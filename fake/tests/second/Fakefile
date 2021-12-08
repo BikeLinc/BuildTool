@@ -1,0 +1,8 @@
+MY_VAR="first output 1"
+first: second
+	echo ${MY_VAR}
+	echo first output 2
+
+second:
+	echo second output 1
+	echo second output 2

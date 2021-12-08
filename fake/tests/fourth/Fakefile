@@ -1,0 +1,8 @@
+first: second
+	g++ -o temp temp.cpp
+	./temp
+	rm temp
+	rm temp.cpp
+
+second:
+	echo '#include <iostream>\nint main(){std::cout <<"hello world" << std::endl;return 0;}' > temp.cpp
