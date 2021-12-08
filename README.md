@@ -25,7 +25,12 @@ make run
 <br>
 <h2>Features</h2>
 
-BuildTool currently only supports variable declaration, the referencing of said variables, rule declaration, and dependency prioritized execution.
+BuildTool currently only supports
+-variable declaration
+-variable refrencing
+-rule creation w/dependencies
+-dependency prioritized execution
+-circular dependency detection
 
 <br>
 <h2>Syntax</h2>
