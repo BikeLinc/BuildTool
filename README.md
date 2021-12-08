@@ -25,12 +25,16 @@ make run
 <br>
 <h2>Features</h2>
 
-BuildTool currently only supports
--variable declaration
--variable refrencing
--rule creation w/dependencies
--dependency prioritized execution
--circular dependency detection
+Currently Supported
+- variable declaration
+- variable refrencing
+- rule creation w/dependencies
+- dependency prioritized execution
+- circular dependency detection
+
+Planned
+- Wildcard Functionality
+- Improved Parser
 
 <br>
 <h2>Syntax</h2>
