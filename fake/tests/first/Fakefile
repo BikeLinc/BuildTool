@@ -1,7 +1,0 @@
-first: second
-	echo first output 1
-	echo first output 2
-
-second:
-	echo second output 1
-	echo second output 2
