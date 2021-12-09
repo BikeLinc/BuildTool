@@ -1,9 +1,3 @@
-# Welcome to BuildTool
-
-BuildTool is a specification for writing and executing shell rules in a dependency prioritized fashion and is based on GNU's make build tool.
-
-<br>
-
 <h2>Getting Started</h2>
 
 1. Clone
